@@ -1,5 +1,5 @@
 import ModalTest from './components/ModalTest'
 
-export default function verticalModalTest() {
+export default function VerticalModalTest() {
   return <ModalTest />
 }

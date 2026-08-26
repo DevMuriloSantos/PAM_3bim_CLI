@@ -1,84 +1,17 @@
 import { StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { StatusBar } from "expo-status-bar";
 
 import { NavigationContainer } from "@react-navigation/native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import RootNavigator from "./components/RootNavigator";
 
-import Home from "./components/Home";
-import Ex001 from "./Ex001";
-import Ex002 from "./Ex002";
-import HorizontalModalTest from "./horizontalModalTest";
-import VerticalModalTest from "./verticalModalTest";
-
-const Tabs = createBottomTabNavigator();
-const icons: any = {
-  HomeTabs: {
-    name: "home-outline",
-  },
-  Ex001: {
-    name: "numeric-1-box-multiple-outline",
-  },
-  Ex002: {
-    name: "numeric-2-box-multiple-outline",
-  },
-  HorizontalModalTest: {
-    name: "swap-horizontal-circle-outline",
-  },
-  VerticalModalTest: {
-    name: "swap-vertical-circle-outline",
-  },
-};
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar style="light"/>
       <NavigationContainer>
-        <Tabs.Navigator
-          screenOptions={({ route }: any) => ({
-            tabBarIcon: ({ color, size }: any) => {
-              const { name } = icons[route.name];
-              return (
-                <MaterialCommunityIcons name={name} size={size} color={color} />
-              );
-            },
-            headerShown: false,
-            tabBarInactiveTintColor: "#E0E0E0", // cor do icone da rota inativa
-            tabBarActiveTintColor: "#2FC183", // cor do icone da rota ativa
-            tabBarStyle: styles.tabBar,
-            tabBarLabelStyle: {
-              // aumenta o tamanho da fonte do nome da rota
-              fontSize: 12,
-            },
-          })}
-        >
-          <Tabs.Screen
-            name="HomeTabs"
-            component={Home}
-            options={{ title: "Home" }}
-          />
-          <Tabs.Screen
-            name="Ex001"
-            component={Ex001}
-            options={{ title: "Ex001" }}
-          />
-          <Tabs.Screen
-            name="Ex002"
-            component={Ex002}
-            options={{ title: "Ex002" }}
-          />
-          <Tabs.Screen
-            name="HorizontalModalTest"
-            component={HorizontalModalTest}
-            options={{ title: "HorizontalModalTest" }}
-          />
-          <Tabs.Screen
-            name="VerticalModalTest"
-            component={VerticalModalTest}
-            options={{ title: "VerticalModalTest" }}
-          />
-        </Tabs.Navigator>
+        <RootNavigator />
       </NavigationContainer>
     </SafeAreaView>
   );

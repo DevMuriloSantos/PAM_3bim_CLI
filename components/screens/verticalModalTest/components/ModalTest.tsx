@@ -62,7 +62,6 @@ function ModalTest() {
   }
 
   return (
-    <ScrollView>
       <View style={{ marginTop: 65, display: "flex", alignItems: "center" }}>
         <Text style={{ fontSize: 20, fontWeight: "bold" }}>
           Modelos de Porsche
@@ -98,6 +97,7 @@ function ModalTest() {
         </Modal>
 
         <FlatList
+        numColumns={2}
           data={informationsGame}
           renderItem={({ item }: any) => (
             <View style={{ margin: 20 }}>
@@ -116,7 +116,6 @@ function ModalTest() {
           keyExtractor={(item) => item.id.toString()}
         />
       </View>
-    </ScrollView>
   );
 }
 
