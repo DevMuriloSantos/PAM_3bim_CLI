@@ -13,12 +13,6 @@ export default function Home() {
     <View style={styles.container}>
       <Text style={{ fontSize: 20 }}>Bem vindo a tela principal!</Text>
 
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate("HomeTabs")}
-      >
-        <Text style={styles.text}>Home</Text>
-      </TouchableOpacity>
 
       <TouchableOpacity
         style={styles.button}

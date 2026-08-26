@@ -3,7 +3,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 
 import { NavigationContainer } from "@react-navigation/native";
-import RootNavigator from "./components/RootNavigator";
+import RootNavigator from "./navigation/RootNavigator";
 
 
 export default function App() {
