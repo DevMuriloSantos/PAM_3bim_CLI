@@ -286,6 +286,7 @@ O repositório contém um vídeo demonstrativo do aplicativo:
 Projeto desenvolvido por:
 
 **Murilo Santos**
+**e**
 **Matheus Barros**
 
 Projeto acadêmico desenvolvido para a disciplina de **PAM — Programação de Aplicativos Mobile**.
