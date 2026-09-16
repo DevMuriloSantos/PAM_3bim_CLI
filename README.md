@@ -6,6 +6,18 @@ O projeto reúne diferentes exercícios desenvolvidos durante as aulas em um ún
 
 ---
 
+## 👨‍💻 Desenvolvedores
+
+Projeto desenvolvido por:
+
+**Murilo Santos**
+**e**
+**Matheus Barros**
+
+Projeto acadêmico desenvolvido para a disciplina de **PAM — Programação de Aplicativos Mobile**.
+
+---
+
 ## 📱 Sobre o projeto
 
 O **PAM CLI - React Navigation** foi desenvolvido como um aplicativo demonstrativo de diferentes tipos de navegação em aplicações mobile, utilizando principalmente os padrões **Tabs** e **Stack** do React Navigation.
@@ -278,18 +290,6 @@ O repositório contém um vídeo demonstrativo do aplicativo:
 **`PAM_3bim_CLI.mp4`**
 
 [▶️ Acessar o vídeo de demonstração](./PAM_3bim_CLI.mp4)
-
----
-
-## 👨‍💻 Desenvolvedores
-
-Projeto desenvolvido por:
-
-**Murilo Santos**
-**e**
-**Matheus Barros**
-
-Projeto acadêmico desenvolvido para a disciplina de **PAM — Programação de Aplicativos Mobile**.
 
 ---
 
